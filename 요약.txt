@@ -1,0 +1,205 @@
+# 요약
+
+| 번호 | 태그 | 의미 |
+| --- | --- | --- |
+| 1 | <!doctype html> | 문서 유형 → 아래 기록한 정보는 HTML5으로 작성한다는 것을 나타낸다. |
+| 2 | <html> | HTML 문서의 시작와 종료 |
+| 3 | <head> | <meta>, <title>, <link>, <style>는 반드시 <head> 사이에 쓴다.
+<script>는 <head>와 <body> 사이에 사용한다. |
+| 4 | <meta> | HTML 문서의 설명, 키워드, 문서의 작성자 등을 지정한다. |
+| 5 | <title> | HTML 문서의 제목을 지정한다. → 웹 브라우저의 제목 표시줄에 표시된다. |
+| 6 | <link> | 외부 CSS 파일을 HTML 문서에 연결할 때 사용한다.
+<link rel=”stylesheet” href=”./[경로/]파일명.css”> → 외부 CSS |
+| 7 | <style> | HTML 문서 내에서 스타일(CSS)을 정의한다. → 내부 CSS
+<style>
+     내부 CSS를 기록한다.
+<style> |
+| 8 | <script> | 자바스크립트를 HTML 문서 내부에서 정의하거나,  → 내부 스크립트
+<script>
+     자바스크립트 내용을 기록한다.
+</script>
+외부에서 자바스크립트 파일을 불러올 때 사용한다. → 외부 스크립트
+<script src=”./경로/파일명.js”> |
+| 9 | <body> |  |
+| 10 | <hn> | n=1,2,…,6 |
+| 11 | <p> |  |
+| 12 | <br> |  |
+| 13 | <hr> |  |
+| 14 | <pre> |  |
+| 15 | <strong> |  |
+| 16 | <b> |  |
+| 17 | <em> |  |
+| 18 | <i> |  |
+| 19 | <mark> |  |
+| 20 | <small> |  |
+| 21 | <sub> |  |
+| 22 | <sup> |  |
+| 23 | <del> |  |
+| 24 | <ins> |  |
+| 25 | <blockquote> |  |
+| 26 | <q> |  |
+| 27 | <abbr> |  |
+| 28 | <cite> |  |
+| 29 | <address> |  |
+| 30 | <code> |  |
+| 31 | <samp> |  |
+| 32 | <kbd> |  |
+| 33 | <var> |  |
+| 34 | <a> |  |
+| 35 | <img> |  |
+| 36 | <video> |  |
+| 37 | <audio> |  |
+| 38 | <iframe> |  |
+| 39 | <ul> |  |
+| 40 | <ol> |  |
+| 41 | <li> |  |
+| 42 | <dl> |  |
+| 43 | <dt> |  |
+| 44 | <dd> |  |
+| 45 | <form> |  |
+| 46 | <fieldset> |  |
+| 47 | <legend> |  |
+| 48 | <input> |  |
+| 49 | <button> |  |
+| 50 | <textarea> |  |
+| 51 | <select> |  |
+| 52 | <label> |  |
+| 53 | <option> |  |
+| 54 | <optgroup> |  |
+| 55 | <datalist> |  |
+| 56 | <table> |  |
+| 57 | <tr> |  |
+| 58 | <td> |  |
+| 59 | <th> |  |
+| 60 | <caption> |  |
+| 61 | <col> |  |
+| 62 | <colgroup> |  |
+| 63 | <thead> |  |
+| 64 | <tbody> |  |
+| 65 | <tfoot> |  |
+| 66 | <div> |  |
+| 67 | <span> |  |
+| 68 | <header> |  |
+| 69 | <footer> |  |
+| 70 | <section> |  |
+| 71 | <article> |  |
+| 72 | <aside> |  |
+| 73 | <main> |  |
+| 74 | <nav> |  |
+
+## 마크업 기본 문법 규칙
+
+### 요소는 시작 태그와 종료 태그가 있어야 한다.
+
+```jsx
+<시작태그>내용</종료태그>
+
+<h1>제목</h1>
+<p>나는 단락이다.</p>
+```
+
+### 단, 태그 중에는 종료 태그가 없는 요소도 있다. → 빈 요소(empty element)
+
+```html
+<br>, <hr>, <img>, <input>, <meta>, <link>
+```
+
+### 요소는 제대로 중첩되어야 한다.
+
+```jsx
+<p>나는 
+	<strong>문단</strong>이다.
+</p>
+```
+
+잘못된 표현
+
+```html
+<p>나는 <strong>문단</p>이다.</strong>
+```
+
+### img 태그에는 alt 속성이 있어야 한다. → 웹 접근성
+
+HTML 태그마다 속성이 정해져 있으며, 필수 속성(반드시 사용!)과 선택 속성(글로벌 속성)으로 구분된다.
+
+글로벌 속성에는 id, class, title, style 등이 있다.
+
+```html
+<시작태그 속성="값" 속성="값" 속성="값" ...>내용</종료태그>
+
+<img src="./[경로/]파일명.jpg alt="대체 텍스트" width="400">
+<img src="./[경로/]파일명.png alt="대체 텍스트" height="200">
+<img src="./[경로/]파일명.gif alt="대체 텍스트" style="width:400px;"> -> 인라인 CSS
+<img src="./[경로/]파일명.svg alt="대체 텍스트">
+
+위에서 src와 alt는 필수 속성이다.
+```
+
+### 태그명과 속성명은 대소문자를 구별하지 않는다.
+
+→ 그러나, 소문자로 마크업 하는 것을 권장한다.
+
+```html
+<p>나는 단락이다.</p>         (권장)
+<P>나는 단락이다.</P>
+```
+
+### 속성 값은 큰 따옴표(” ”)로 묶는 것을 권장한다.
+
+```html
+<img src="./경로/이미지.png" alt="대체 텍스트">    (권장)
+<img src=./경로/이미지.png alt=대체 텍스트>
+```
+
+### 주석
+
+- 코드의 설명문
+- 디버깅
+- VS Code 단축키: ctrl+/ 또는 shift+alt+a
+
+```html
+<!-- 주석 -->
+```
+
+<aside>
+💡
+
+디버깅(Debugging) ? bug(벌레 → 오류, 에러) 발견하여 수정하는 과정
+
+</aside>
+
+웹 콘텐츠 접근성 지침 2.1 (KWCAG 2.1)
+
+https://www.wa.or.kr/board/view.asp?sn=161&page=1&search=&SearchString=&BoardID=0004&cate=
+
+[한국형 웹 콘텐츠 접근성 지침 2.1.pdf](attachment:1d413701-fb60-4c64-88b5-cc83be019f2b:한국형_웹_콘텐츠_접근성_지침_2.1.pdf)
+
+블록 레벨 요소(Block-level Elements) VS 인라인 요소(Inline Elements)
+
+| 구분 |  |
+| --- | --- |
+| 블록 레벨 요소 | 줄 바꿈이 있다.
+텍스트(문자)와 인라인 요소를 자식 요소로 포함할 수 있다.
+블록 레벨 요소를 자식으로 포함 할 수 있는 요소와 포함할 수 없는 요소가 있다.
+<div>, <header>, <footer>, <section>, <main>, <article>, <aside>, <nav>,
+<hn>, <p>, <pre>, <ul>, <li>, <ol>, <dl>, <dt>, <dd>, <form>, <fieldset>, <figcation>, <figure>, <table>, <thead>, <tbody>, <tfoot>, <blockquote>, … |
+| 인라인 요소 | 줄 바꿈이 없다.
+인라인 요소의 자식으로 블록 레벨 요소를 사용할 수 없다.
+인라인 요소는 텍스트(문자)와 인라인 요소를 자식 요소로 포함할 수 있다.
+<span>, <a>, <img>, <map>, <video>, <audio>, <br>, <q>
+<input>, <textarea>, <label>
+<strong>, <b>, <em>, <i>, <mark>, <small>, <sup>, <sub>, <del>, <ins>, 
+<kbd>, <code>, <samp>, <var>, … |
+
+### 인라인 요소의 자식으로 블록 레벨 요소를 사용할 수 없다.
+
+```html
+<b>나는 <p>단락</p>이다.</b>     (x)
+<span><h1>제목</h1></span>      (x)
+
+<h1><span>제목</span></h1>      (o)
+<p>나는 <b>단락</b>이다.</p>     (o)
+```
+
+텍스트(문자)와 인라인 요소를 자식 요소로 포함할 수 있다.
+https://codingand.notion.site/1ce2620edc1980529de7cf9f5bb5c950
