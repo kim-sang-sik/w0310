@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃-기본가로유형</title>
+    <title>레이아웃-응용1</title>
     <style>
-        div {
-            height: 350px;
-        }
-        
         .wrap {
+            /* 자식 요소를 가로 배치 */
             display: flex;
         }
 
@@ -21,7 +18,21 @@
 
         .right_contents {
             width: 500px;
+        }
+
+        .slide {
+            height: 200px;
             background: #e14444;
+        }
+
+        .contents {
+            height: 100px;
+            background: #42ebab;
+        }
+
+        .footer {
+            height: 50px;
+            background: #605e5e;
         }
     </style>
 </head>
@@ -29,9 +40,14 @@
 <body>
     <!-- shift+alt+아래방향키 -->
     <!-- ctrl+alt+아래방향키 -->
+    <!-- shift+alt+f: 들여쓰기 -->
     <div class="wrap">
         <div class="header">헤더</div>
-        <div class="right_contents">오른쪽콘텐츠</div>
+        <div class="right_contents">
+            <div class="slide">슬라이드</div>
+            <div class="contents">콘텐츠</div>
+            <div class="footer">푸터</div>
+        </div>
     </div>
 </body>
 
