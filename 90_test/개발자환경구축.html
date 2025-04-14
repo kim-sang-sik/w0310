@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃_김상식</title>
+    <style>
+ 
+        .wrap {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        /* 해드 */
+        nav { 
+            width: 200px;
+            background: #eee;
+            margin-right: 4px;
+        }
+
+        /* 오른쪽 */
+        .right {
+            width: 1000px;
+        }
+        /* 목차 */
+        .main {
+            height: 400px;
+            background: #ddd;
+            margin-bottom: 4px;
+        }
+
+        /* 슬라이드 */
+        .slide {
+            margin-bottom: 4px;
+            height: 200px;
+            background: #ccc; 
+        }
+
+        /* 콘텐츠 */
+        .contents {
+            display: flex;
+            height: 250px;
+        }
+        /* 공지사항 */
+        .notice{
+            width: 500px;
+            margin-right: 4px;
+           background: #bbb;
+        }
+        /* 배너 */
+        .banner{
+            width: 500px;
+            background: #aaa;
+        }
+        /* 푸터 */
+        footer {
+            display: flex;         
+            height: 100px;
+        }
+        /* 하단로고 */
+        .blogo {
+            width: 200px;
+            background: #888;
+            margin-right: 4px;
+        }
+        /* 주소 및 저작권 */
+        .copy {
+            width: 800px;
+            background: #777;
+            margin-right: 4px;
+        }
+        /* SNS */
+        .sns { 
+            width: 200px;
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+            <!-- 왼쪽 로고 -->
+            <nav>헤드</nav>
+            <!-- 오른쪽 -->
+             <div class="right">
+            <!-- 목차 -->
+             <div class="main">목차</div>           
+        <!-- div.slide -->
+        <div class="slide">슬라이드</div> 
+        <div class="contents">
+            <!-- 공지사항 -->
+             <div class="notice">공지사항</div>
+            <!-- 배너 -->
+             <div class="banner">배너</div>
+        </div>
+    </div>
+</div>
+        <footer>
+            <!-- 하단로고 -->
+             <div class="blogo">하단로고</div>
+            <!-- 주소 및 저작권 -->
+             <div class="copy">주소 및 저작권</div>
+            <!-- SNS-->
+             <div class="sns">SNS</div>
+        </footer>
+    </div>
+</body>
+</html>
