@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+         /* 
+            border-collpase 셀 경계 정의
+            기본값: seoerate(불리된)
+
+            border-spacing  셀 간격
+                border-collpase: seperate; 일때 사용 가능
+            caption-side    캡션의 위치
+                기본값: top
+            */
+        table{
+            width: 100%;
+            /* border-collapse: collapse; */
+            margin-bottom: 20px;
+            border-spacing: 5px;
+            caption-side: bottom;
+        }
+        td{border: 1px solid #042}
+    </style>
+</head>
+<body>
+    <h1>표 - 셀합치기</h1>
+    <p>열 열합치기는 colspan을 사용하고 행 합치기는 rowspan을 사욯한다. 값은 셀을 합치 개수만큼 숫자를 쓴다.
+    또한 두속성은 &lt; th&gt 와 &lt; td&gt에만 사용 가능하다</p>
+    <h2>열 합치기</h2>
+    <table>
+        <caption>열 합치기</caption>
+        <tr>
+            <!-- 1열 ~ 3열을 하나의 열로 합치기 -->
+            <td colspan="3">1</td> <!-- 1행 1열 -->
+            <!-- <td>2</td> 1행 2열 -->
+            <!-- <td>3</td> 1행 3열 -->
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <h2>행 합치기</h2>
+    <table>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- <td>4</td> -->
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+</html>
