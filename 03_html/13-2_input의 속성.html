@@ -8,23 +8,38 @@
 <body>
     <form action="#" method="post">
         <fieldset>
-            <legend>type 속성</legend>
-            <p>아이디 : <input type="text"></p>
-            <p>비밀번호 : <input type="password"></p>
-            <p>검색 : <input type="search"></p>
-            <p>이메일 : <input type="email"></p>
-            <p>전화번호 : <input type="tel"></p>
-            <p>걸러선택 : <input type="color"></p>
-            <p>수량 : <input type="number" min="1" max="10" value="1"></p>
-            <p>만족도 : <input type="range" min="1" max="10" value="1"></p>
+            <legend>type 속성</legend><br>
+            <!-- 검색 로그인 회원가입등 -->
+            <p>아이디 : <input type="text"></p><br>
+            <p>비밀번호 : <input type="password"></p><br>
+            <!-- 사용자에게 노출할 픽요가 없는 데이터를 지정할 때 사용한다. -->
+            <p><input type="hidden"></p><br>
+
+            <p>검색 : <input type="search"></p><br>
+            <p>이메일 : <input type="email"></p><br>
+            <p>전화번호 : <input type="tel"></p><br>
+
+            <p>걸러선택 : <input type="color"></p><br>
+
+
+            <p>수량 : <input type="number" min="1" max="10" value="1"></p><br>
+            <p>만족도 : <input type="range" min="1" max="10" value="1"></p><br>
+
+            <!-- checkbox와 radio의 value로 전송할 데이터 값이다. -->
             <p>예<input type="radio" name="receive" checked="checked">
-            아니오<input type="radio" name="receive"></p>
-            <p>html<input type="checkbox" checked="checked"> CSS<Input type="checkbox"></p>
-            <p><input type="submit" value="전송"></p>
-            <p><input type="reset" value="취소"></p>
-            <p><input type="button" value="확인"></p>
-            <p><input type="image" src="./../Firefly 은은한 운무가 펼쳐진 숲속 32428.jpg" alt="검색"></p>
-            <p><input type="file"></p>
+            아니오<input type="radio" name="receive"></p><br>
+            <p>html<input type="checkbox" checked="checked"> CSS<Input type="checkbox"></p><br>
+                
+            <p><input type="submit" value="전송"></p><br>
+            <p><input type="reset" value="취소"></p><br>
+            <p><input type="button" value="확인"></p><br>
+            <p><input type="image" src="./../Firefly 은은한 운무가 펼쳐진 숲속 32428.jpg" alt="검색"></p><br>
+            <p><input type="file"></p><br>
+                
+            <p><input type="date"></p><br>
+            <p><input type="datetime-local"></p><br>
+            <p><input type="month"></p><br>
+            <p><input type="week"></p><br>
         </fieldset>
     </form>
 </body>
