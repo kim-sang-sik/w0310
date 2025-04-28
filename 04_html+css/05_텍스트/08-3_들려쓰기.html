@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html+css</title>
+    <style>
+        p {
+            padding: 10px 50px;
+        }
+        .paper {
+            /* 첫 줄 들여쓰기 */
+            text-indent: 15px;
+         }
+         a {
+            font-size: 40px;
+            width: 56px;
+            display: inline-block;
+            /* text-indent: -9000px; */
+            border: 1px solid red;
+            background: url(./../../03_html/04_미디어/asset/circle-left-solid.svg) no-repeat;
+         }
+    </style>
+</head>
+<body>
+    <p> text-indet는 머리의 첫머리를 들여쓰기 
+        해주는 속성으로 블록 베벨요소에만 적용된다. 음수로 지정하면 글자가 왼쪽 멀리 가버리므로
+        보이지않게 된다.불가피하게 링크에 배경이미지로 글자가 들어 있다면 이방법을 이용할 수 있다.
+        즉, display:none;이나 visibility 없어도 글자를 안보이게 할수있고 링크 텍스트를 넣어 
+        접근성을 높이기 떄문에 정말 요소를 숨긴 것이 아니어서 스크린 리더기에서 읽어줄 수 있다.
+    </p>
+    <p class="paper"> text-indet는 머리의 첫머리를 들여쓰기 
+        해주는 속성으로 블록 베벨요소에만 적용된다. 음수로 지정하면 글자가 왼쪽 멀리 가버리므로
+        보이지않게 된다.불가피하게 링크에 배경이미지로 글자가 들어 있다면 이방법을 이용할 수 있다.
+        즉, display:none;이나 visibility 없어도 글자를 안보이게 할수있고 링크 텍스트를 넣어 
+        접근성을 높이기 떄문에 정말 요소를 숨긴 것이 아니어서 스크린 리더기에서 읽어줄 수 있다.
+    </p>
+    <a href="#">왼쪽버튼</a>
+</body>
+</html>
