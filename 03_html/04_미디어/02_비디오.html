@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+        .vid1 { 
+            width: 600px;
+        }
+        iframe {
+            border: none;
+            width: 600px;
+            height: 338px;
+        }
+    </style>
+</head>
+<body>
+    <h1>비디오</h1>
+    <!-- autoplay하려면 muted와 함께 사용해야 한다. -->
+    <video class="vid1" src="./asset/3065047-hd_1920_1080_30fps.mp4" loop autoplay muted></video>
+    <!-- 비디오 기본값 단위는 px, width는 css로 하는게 좋다. -->
+    <video controls width="600" poster="./asset/3065047-hd_1920_1080_30fps.mp4">
+        <source src="./asset/3065047-hd_1920_1080_30fps.mp4" type="video/mp4">
+        <source src="./asset/3065047-hd_1920_1080_30fps.webm" type="video/webm">
+        <source src="./asset/3065047-hd_1920_1080_30fps.ogv" type="video/ogg">
+        your browser does not support the video elment(당신의 부라우저는
+        비디오 요소를 지원하지 않습니다.)
+    </video>
+    <!-- width="1431" height="805" / width="600" height="338" -->
+        <!-- 소스?파라미터1&파라미터2.... 
+         
+            autoplay=1          자동 재생
+            mute=1              음소거(autoplay와 함께사용)
+            loop=1              반복 재생
+            controls=0          컨트롤바 숨심
+            start=30            30초부터 재생
+            modesbranding=1     유튜브 로고 최소화
+            rel=0               영상 종료시 다른 채널 영ㅇ상 표시 방지(같은 채널만 노출)
+        -->
+    <iframe src="https://www.youtube.com/embed/8T2rh1P7cro" title="[자막뉴스] 핵무기 보유국끼리 전면전 위기...불안한 신호까지 &#39;폭풍전야&#39; / YTN"
+    allow="autoplay; encrypted-media;"></iframe>
+</body>
+</html>

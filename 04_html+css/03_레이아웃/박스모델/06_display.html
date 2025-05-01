@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html+css</title>
+    <style>
+        /* 
+            모든 요소의 width와 height의 기본값은 auto이다
+
+            display: 화면에 표시되는 방식
+            1.block 
+                - 줄 바꿈O
+                - width는 부모 width 크기의 100%
+                - heigft는 콘텐츠 크기
+                - width와 height 를 지정O
+                -margin은 상하좌우 모두 적용
+            2.inline
+                = 줄 바꿈X
+                - width와 height 모두 콘텐츠 크기
+                - width와 height 를 지정X
+                -margin은 좌우 모두 적용
+            3.line-block
+                -인라인이면서 블록 특징을 가진다
+                - 줄 바꿈X
+                - width는 부모 width 크기의 100%
+                - width와 height 를 ㅜㅁ 콘텐츠 크기
+                - width와 height 를 지정O
+                -margin은 상하좌우 모두 적용
+            4.ne: 없음
+        */
+        div{
+            width: 300px; /* w300 */
+            height: 30px; /* h30 */
+            border: 1px solid #000; /* bd */
+            padding: 10px; /* p10 */
+            /* 위 아래 여백의 경우 겹치면 큰 쪽으로
+            지정된다 */
+            margin: 20px; /* m20 */
+            background: #913a3a; /* bg */
+            /* display: inline; */
+        }
+        span{
+            display: inline-block;
+            /* wdith와 height가 지정되지 않는다. */
+            /* width: 200px;
+            height: 50px; */
+            border: 1px solid #000;
+            /* 요소가 겹칠 수 있다. */
+            padding: 10px;
+            margin: 20px;
+            background: #394da5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        요소(element)
+        1.블록 레벨 요소: div
+
+        2.인라인 요소: span
+    -->
+    <!-- div는 블록 레벨 요소 -->
+    <div>div박스</div>
+    <div>div박스</div>
+    <!-- span는 인라인 요소 -->
+    <span>span박스</span>
+    <span>span박스</span>
+</body>
+</html>

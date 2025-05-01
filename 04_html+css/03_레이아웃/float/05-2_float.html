@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html+css</title>
+        <style>
+        h1,
+        p,
+        ul {
+            margin: 0;
+        } 
+        ul {
+            /* 개별 속성 */
+            /* list-style-type: none;  / list-style과 같음*/
+            /* 속기 속성 */
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            float: left;
+            margin-right: 10px;
+            width: 150px;
+            text-align: center;
+        }
+
+        li:last-of-type {margin-right: 0;}
+
+        li p {
+            text-align: justify;
+            word-break: break-all;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        h3 { padding: 5px; }
+
+        li:nth-of-type(1) h3 {background: #baa; }
+
+        li:nth-of-type(2) h3 {background: #abc; }
+
+        li:nth-of-type(3) h3 {background: #eba; }
+
+        li:nth-of-type(4) h3 {background: #aa7; }
+        </style>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet.<br>
+    Lorem, ipsum <strong>Lorem, ipsum dolor.</strong>Lorem 
+    ipsum dolor sit amet.
+    </p>
+    <ul class="gallery">
+        <li><h3>lorem</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Vitae quam numquam enim vel dolorum reprehenderit libero adipisci illo! Alias nemo explicabo dolorum.
+            Quidem optio labore perspiciatis, repellendus voluptas facilis non?
+        </p>
+    </li>
+        <li><h3>lorem</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Vitae quam numquam enim vel dolorum reprehenderit libero adipisci illo! Alias nemo explicabo dolorum.
+            Quidem optio labore perspiciatis, repellendus voluptas facilis non?
+        </p>
+    </li>
+        <li><h3>lorem</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Vitae quam numquam enim vel dolorum reprehenderit libero adipisci illo! Alias nemo explicabo dolorum.
+            Quidem optio labore perspiciatis, repellendus voluptas facilis non?
+        </p>
+    </li>
+        <li><h3>lorem</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Vitae quam numquam enim vel dolorum reprehenderit libero adipisci illo! Alias nemo explicabo dolorum.
+            Quidem optio labore perspiciatis, repellendus voluptas facilis non?
+        </p>
+    </li>
+    </ul>
+</body>
+</html>
