@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html+css</title>
+    <title>자식 선택자</title>
     <style>
         /* 
-            자식선책자-> 선택자를 >으로 구분
-            선택자 >선택자
-            부모 > 자식
+            선택자1>선택자2....
+            부모>자식
+            조상>손자(x)
         */
         /* div중 클래스 이름이 abox 요소의 자손 p를 선택하여 */
-        /* div.abox p { */
         /* 클래스 이름이 abox 요소인 자손 p를 선택하여 */
-        .abox p{
-            color: #ad2d2d;
+        .abox > p{
+            color: blue;
         }
     </style>
 </head>
 <body>
     <dav class="abox">
-        <p>p는 div의 첫 번째 자식이다</p>
-        <p>p는 div의 두 번쨰 자식이다</p>
+        <!-- .abox의 자식은 p, ul, p -->
+        <p>abox의 하위(자식) 요소</p>
         <ul>
             <li>
-                <p>p는 첫 번째 li의 자식, div의 손자이다</p>
+                <p>abox의 하위(자식x) 요소</p>
             </li>
             <li>
-                <p>p는 첫 번쨰 li의 자식, div의 손자이다</p>
+                <p>abox의 하위(자식x) 요소</p>
             </li>
         </ul>
+        <p>.abox의 하위(자식) 요소</p>
     </dav>
-    <p>p는 body의 자식이다</p>
+    <p>abox의 하위 요소가 아님!</p>
 </body>
 </html>
