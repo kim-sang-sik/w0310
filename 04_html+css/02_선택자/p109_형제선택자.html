@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제 선택자</title>
+    <style>
+        /* 
+            tilde (틸드, ~)
+            형제 선책자-> 선택자를 ~으로 구분
+            선택자 ~ 선택자
+            형 ~ 제 선택자
+        */
+        /* h1 바로 아래 동생 p를 선택하여 */
+        h3 ~ p{
+            color: #ad2d2d;
+        }
+    </style>
+</head>
+<body>
+    <h3>h1의 동생은 전부다</h3>
+    <p>나는 선택 됐다.</p>
+    <p>나는 선택 됐다.</p>
+    <ul>
+        <li><p>나는 h3 동생 아니다.</p></li>
+        <li><p>나는 h3 동생 아니다</p></li>
+    </ul>
+    <p>x</p>
+</body>
+</html>

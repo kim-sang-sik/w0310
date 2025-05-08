@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹 선택자</title>
+    <style>
+        /* 
+            기본 선택자
+            그룹 - ,(콤마)
+            선언부가 같을 경우 묶어 사용 가능
+            */
+            /* 
+                속성:값; 이 같을 경우 그룹 선택자를 사용한다. 
+                선택자, 선택자, .... {선언부}
+            */
+        h1, p {
+            /* 개별속성 
+            border-width: 5px;
+            border-style: solid;
+            border-color: lightblue;
+            */
+            /* 속기속성 */
+            border: 5px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자</h1>
+    <h2>요소(타입, 태그) 선택자</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
