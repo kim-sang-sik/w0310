@@ -1,32 +1,87 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* CSS Reset */
+/* 초기화 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+ul {
+    padding: 0;
+    list-style: none;
+}
+body {
+    background: #fff;
+    color: #333;
+    font: 15px/1.6 '굴림', sans-serif;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
 
+/* 공통 */
 html, body {
     height: 100%;
 } 
 .wrap {
     display: flex;
+    /* 
+        함수의 형식
+        함수명(피연산자1 연산자 피연산자2)
+        연산자: +, -, *, /,
+        calc(피연산자 - 피연산자)
+    */
     height: calc(100% - 120px);
 }
+/* 헤더 */
 header {
     width: 200px;
-    background: lightblue;
+    background: #c3e5e7;
+    padding: 20px 0;
 }
+/* 로고 */
+.logo {
+    text-align: center;
+}
+/* 네비게이션 */
+nav {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav li {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 8px;
+    border: 1px solid #000;
+}
+nav li a:hover {
+    background: #5e2bb8;
+    color: #fff;
+}
+nav a { 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* 0.3초 */
+    transition: .3s;
+}
+/* 콘텐츠 */
 .contents {
     width: 400px;
     background: lightcoral;
 }
+/* 슬라이드 */
 .slide {
     width: calc(100% - 600px);
     background: lightgreen;
+    /* overflow hidden;은 콘텐츠가 영역을 벗어나면 숨긴다. */
+    overflow: hidden;
 }
+/* 푸터 */
 footer {
     height: 120px;
     background-color: yellow;
