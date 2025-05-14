@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 /* 전체 */
+/* 0만 단위 생략 가능 */
 * {
     margin: 0;
 }
 
 body {
     background: #fff;
-    color: #333;
+    color: #222328;
 }
 
 .wrap {
@@ -15,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-/* 해더 */
+/* 헤더 */
 .header {
     display: flex;
     height: 100px;
@@ -23,11 +24,11 @@ body {
 
 /* 로고 */
 .logo {
-    width: 264px;
+    width: 200px;
     height: 40px;
 }
 
-/* 내비게이션 */
+/* 내게이션 */
 
 /* 슬라이드 */
 .slide {
@@ -35,14 +36,13 @@ body {
 }
 
 /* 콘텐츠 */
-/* display:flex;를 부모요로에 지정하면 부모는 플렉스 컨테이너가
-되고 자식은 플렉스 아이템이 되며, 자식은 가로 배치된다. */
+/* display:flex;를 부모 요소에 지정하면 부모 플렉스 컨테이너가 되고, 자식은 플렉스 아이템이 되며, 자식은 가로 배치된다. */
 .contents {
     display: flex;
     height: 200px;
 }
 
-.notuce,
+.notice,
 .banner,
 .shortcut {
     width: 400px;
@@ -53,7 +53,7 @@ body {
 /* 바로가기 */
 
 /* 푸터 */
-footer {
+.footer {
     display: flex;
     height: 100px;
 }
@@ -68,7 +68,7 @@ footer {
     width: 675px;
 }
 
-/* sns */
+/* SNS */
 .sns {
     width: 261px;
 }
