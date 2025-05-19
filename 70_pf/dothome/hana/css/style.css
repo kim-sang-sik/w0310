@@ -76,27 +76,61 @@ nav a {
 }
 /* 배너 */
 .banner {
-    height: 120px;
-    background: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    height: 150px;
+    background: #97b2f1;
+}
+.banner .cont{
+    display: flex;
+}
+.banner .cont img {
+    margin-right: 16px;
 }
 /* 공지사항 */
 .notice {
-    height: calc(100% - 600px);
+    width: 670px;
+}
+.notice a {
+    display: inline-block;
+    width: 500px;
 }
 /* 갤러리 */
 .gallery {
-    height: 360px;
-    background: lightskyblue;
+    width: 670px;
+}
+.gallery .inner {
+    display: flex;
+}
+.gallery h2 {
+    color: #fff;
+    margin: 32px 0 16px;
+}
+.gallery a {
+    margin-right: 16px;
 }
 /* 바로가기 링크 */
 .link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     height: 120px;
-    background: darkkhaki;
+    background: darkblue;
+}
+​
+
+/* 슬라이드 */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 /* 슬라이드 */
 .slide {
     width: calc(100% - 600px);
-     /* overflow hidden;은 콘텐츠가 영역을 벗어나면 숨긴다. */
+    /* overflow hidden;은 콘텐츠가 영역을 벗어나면 숨긴다. */
     overflow: hidden;
 }
 
