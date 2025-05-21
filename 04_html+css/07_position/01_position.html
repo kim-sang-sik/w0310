@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positiom</title>
+    <style>
+        /* 
+            position(퍼지션, 위치, layout(배치)하다) 속성
+                뜻: 요소의 위치 지정
+                값: 
+                    static(기본값)
+                    relative(상대위치): 자기 자신 기준
+
+
+                    absolute(절대위치): 부모(조상) 기준
+                    fixed(고정위치): 창(뷰포트) 기준
+
+                absolute와 fixed는 width가 요소 크기로 정해진다
+                
+                fixed는 상단 고정 내비 제작시 사용된다.
+
+                absolute도 부모(조상) 중에 position 값이 static이 아닌 요소가 없으면 fixed와 같이 창(뷰포트) 기준이다.
+
+                단위: 기준이 px(없다), em(부모), rem(html, :root), %(부모) 등
+
+                static을 제외하고 relative, absolute, fixed일 경우 left, right, top, bottom, z-index(잘 안씀) 5가지 속성을 지정할 수 있다.
+
+                left
+                right
+                top
+                botto
+
+                z-index
+        */
+        body {
+            margin: 30px;
+        }
+   
+        header {
+            position: absolute;
+            width: 10px;
+            top: 20px;
+            left: 50px;
+            height: 100px;
+            background: blue;
+        }
+        section {
+            height: 900px;
+        }
+    </style>
+</head>
+<body>
+    <header>헤더</header>
+    <section>1</section>
+    <section>2</section>
+    <section>3</section>
+    <section>4</section>
+    <footer>푸터</footer>
+</body>
+</html>

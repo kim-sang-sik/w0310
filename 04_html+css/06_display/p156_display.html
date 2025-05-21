@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        /* 
+            display 속성: 화면 표시 박식
+                값: block, inline, inline-block, none.....
+                table-cell
+                flex
+                grid, none
+
+            visibility: 가시성
+                값: visible(기본값)
+                    hidden
+                    collapse
+                
+            opacity: 불투명도
+                값: 1(기본값)
+                    0(투명)
+                    0~1 사이의 값(소수점 사용)
+
+            overflow: 넘침
+                값: visible(기본값)
+                    hidden
+                    scroll
+                    auto
+            
+
+            말줄임(...)
+                width: 200px;
+                text-overflow: ellipsis;
+                verflow: hidden;
+                white-space: nowrap;
+           
+        */
+        li {
+            /* 개별 속성 */
+            /* list-style-type: none; */
+            /* 속기 속성 */
+            list-style: none;
+        }
+        /* 블록레벨 요소는 강제 줄 바꿈된다 */
+        .gnb li {
+            /* 인라인 요소는 줄 바꿈되지 않는다. -> 가로 배치 */
+            display: inline;
+        }
+        .gnb li a {
+            /* 가로 배치 + 가로/세로 적용 */
+            display: inline-block;
+            background: brown;
+            color: #fff;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .gnb li a:hover {
+            text-decoration: underline;
+            background: #369;
+        }
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#">company</a></li>
+        <li><a href="#">product</a></li>
+        <li><a href="#">service</a></li>
+        <li><a href="#">community</a></li>
+    </ul>
+</body>
+</html>

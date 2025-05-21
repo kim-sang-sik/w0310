@@ -12,8 +12,6 @@ body {
     color: #333;
 }
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     /* margin-top: 1em;
     margin-bottom: 1em;
@@ -21,17 +19,17 @@ ul {
 }
 a {
     text-decoration: none;
+    color: #333;
 }
 /* 상단 영역 */
 .wrap {
     display: flex;
     height: 850px;
-    background: darkcyan;
 }
 /* 헤더 영역 */
 header {;
     width: 200px;
-    background: darkbgreen;
+    background: lightgray;
 }
 
 .gnb{
@@ -58,7 +56,7 @@ nav a:hover {
 }
 .spotmenu a:not(:last-child):after {
     content: " | ";
-    margin: 0 8px;
+    margin: 8px;
 }
 .spotmenu a:hover {
     text-decoration: underline;
@@ -73,10 +71,36 @@ nav a:hover {
 .slide {
     height: 400px;
 }
+/* 바로가기 링크 */
+.link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 340px;
+    background: red;
+    text-align: center;
+}
+.like li {
+    margin-top: 16px;
+}
+.link span {
+    display: block;
+}
 /* 배너 */
 .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
     height: 200px;
     background: darkgreen;
+}
+.cont {
+    display: flex;
+}
+.cont img {
+    margin-right: 32px;
 }
 /* 공지사항 및 갤러리 */
 .tabs {

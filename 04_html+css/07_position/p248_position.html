@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {margin: 20px;}
+        .box {
+            width: 650px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* 
+            box-sizing: content-box; (기본값)
+            노란색 박스의 가로 크기는?
+               width + padding *2 + border *2
+            250 + 30 * 2 + 1 * 2 = 250 + 60 + 2 = 312px
+        */
+        p {
+            width: 250px;
+            height: 100px;
+            margin: 0;
+            font-weight: bold;
+            /* box-sizing: content-box; */
+            padding: 30px;
+            background: yellow;
+            border: 1px solid red;
+        }
+        .green {
+            /* 그린 박스의 가로 크기는? 500px */
+            background: green;
+            box-sizing: border-box;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="red">Lorem ipsum dolor sit amet.</p>
+        <p class="green">Lorem ipsum dolor sit amet.</p>
+        <p class="blue">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
