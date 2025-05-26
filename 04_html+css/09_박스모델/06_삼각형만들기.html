@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼각형 만들기</title>
+    <style>
+        div {
+            position: relative;
+            left: 50px;
+            top: 50px;
+            width: 100px;
+        }
+        /* span {
+            vertical-align: middle;
+        } */
+        div:before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 2px;
+            display: inline-block;
+            margin: 10px;
+            border: 10px solid #000;
+            /* 삼각형 */
+            /* width: 0;
+            height: 0;
+            border: 10px solid #000;
+            border-top-color: red;
+            border-bottom-color: lime;
+            border-right: none;
+            border-top-color: #fff;
+            border-bottom-color: #fff; */
+        }
+    </style>
+</head>
+<body>
+    <div>박스</div>
+    <div>박스</div>
+</body>
+</html>

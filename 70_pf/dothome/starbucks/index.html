@@ -11,32 +11,33 @@
             box-sizing: border-box;
         }
         body {
-            font: 15/1.6 'Noto Sans KR', sans-serif;
+            font: 15/1.6 "Noto Sans KR", sans-serif;
         }
         a {
             text-decoration: none;
             color: #333;
         }
-        header {
-            background-color: lightpink;
-        }
-        .sec {
-            height: 800px;
-        }
-        .s1 { background-color: darkcyan; }
-        .s2 { background-color: darkgray; }
-        .s3 { background-color: darkgoldenrod; }
-        .s4 { background-color: darkkhaki; }
-        footer {
-            background-color: #333;
-        }
-        /* 섹션 3 */
+        header {background: lightpink;}
+        .sec {height: 800px;}
+        .s1 {background: darkcyan;}
+        .s2 {background: darkgoldenrod;}
+        .s3 {background: darkgray;}
+        .s4 {background: darkkhaki;}
+        footer {background: #333;}
+
+        /* 섹션3 */
         .s3 {
             display: flex;
             /* 
                 flex-direction: row;
                     주축: justify-content
-                    교차축: align-items
+                        flex-start
+                        flex-end
+                        center
+                    교차축: algn-items
+                        flex-start
+                        flex-end
+                        center
                 flex-direction: column;
                     주축: align-items
                     교차축: justify-content
@@ -44,7 +45,8 @@
             justify-content: center;
             align-items: center;
             background: url(./images/bg.png) no-repeat 50% 50%/cover fixed;
-        }
+        }    
+
         .s3 .txt {
             display: flex;
             flex-direction: column;
@@ -55,27 +57,31 @@
         .s3 .txt p {
             margin: 48px 0 36px;
         }
+
         /* 고스트 버튼 */
         .s3 .txt a {
             width: 126px;
             height: 38px;
             line-height: 2;
             border-radius: 3px;
-            border: 2px solid #fff;
+            border: 2px solid #FFF;
             text-align: center;
             color: #fff;
-            transition: 0.5s;
-            margin: 8px;
+            transition: .5s;
+            margin-right: 8px;
         }
         .s3 .txt a:hover {
-            background: #fff;
             color: #333;
             text-decoration: underline;
+            background: #fff;
         }
+
     </style>
 </head>
 <body>
-    <header>헤더</header>
+    <header>
+        <h1>헤더</h1>
+    </header>
     <section class="sec s1">
         <h2>첫 번째 섹션</h2>
     </section>
@@ -88,11 +94,11 @@
             <h2><img src="./images/title.png" alt="제목"></h2>
             <p><img src="./images/description.png" alt="설명"></p>
             <!-- ghost 버튼 -->
-             <a href="#">자세히 보기</a>
+            <a href="#">자세히 보기</a>
         </div>
         <!-- 이미지 콘텐츠 -->
         <div class="cont">
-            <a href="#"><img src="./images/contens.png" alt="콘텐츠"></a>
+            <img src="./images/contents.png" alt="콘텐츠">
         </div>
     </section>
     <section class="sec s4">
