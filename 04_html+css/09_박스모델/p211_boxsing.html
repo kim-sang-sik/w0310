@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        /* body,p,ul { margin: 0;} 
+        ul {padding: 0;} */
+        body * {outline: 1px dotted red;}
+        p {
+            width: 600px;
+            height: 100px;
+            padding: 30px;
+            border: 5px solid rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            background: rgba(255, 255, 0, 0.5);
+        }
+        .box-sizing {
+            box-sizing: border-box;
+        }
+        .ul {
+            display: flex;
+            width: 500px;
+            margin-top: 20px;
+        }
+        li {
+            width: 25%;
+            /* 개별 속성 */
+            /* list-style-type: none; */ /* lstn */
+            /* 속기속성 */
+            list-style: none;
+            background: rgba(0, 0, 100, 0.3);
+            text-align: center;
+            padding: 10px;
+            /* box-sizing: border-box는 width, height와 함께 사용한다 */
+            box-sizing: border-box;
+        }
+        /* 
+            even    2n    짝수
+            odd     2n+1  홀수
+        */
+        li:nth-child(even) {
+            background: rgba(0, 100, 0, 0.15);
+        }
+        a {
+            text-decoration: none; /* tdn */
+            color: #111;
+        }
+        a:hover {
+            text-decoration: underline; /* tdu */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fugiat?</p>
+    <p class="sizing">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, perferendis!</p>
+    <ul class="sizing_list">
+        <li><a href="#">company</a></li>
+        <li><a href="#">service</a></li>
+        <li><a href="#">custommer</a></li>
+        <li><a href="#">community</a></li>
+    </ul>
+</body>
+</html>

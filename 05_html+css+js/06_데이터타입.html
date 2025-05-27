@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 타입</title>
+</head>
+<body>
+    <script>
+       /*  
+        데이터타입
+            1. 원시(Primitive, 기본)
+                1. 숫자(Number): 10
+                2. 문자열(String): "javascript" -> '' 또는 " "로 묶는다
+                3. 불(Boolean): true, false-> 예약어 키워드
+                4. undefined - 정의하지 않은 값 -> 값이 할당되지 않았을 때
+                5. null - 값 없음 (비어있는 값)
+                .....
+
+            2. 참조(reference)
+                1. 객체(Object): {}
+                2. 배열(Array): []
+                3. 함수(Function): function(){}
+                .....
+        */
+
+        var num = 10; // 정수
+        var num2 = 10.5; // 소수
+        var num3 = 1e+2; // 지수: 1 * 10^2 
+
+        console.log(num,);
+        console.log(num2);
+        console.log(num3);
+        
+        var str1 = '문자';
+        var str2 = "문자";
+        var str3 = "10"; /* 숫자가 아닌 문자 10이다 */
+
+        // +는 문자열 나열
+        console.log("str1 = " + str1);
+        console.log("str2 = " + str2);
+        console.log("str3 = " + str3);
+
+        // "" 또는 '' 출력
+        var str4 = '문자는\t "문자"';
+        var str5 = "문자는\t '문자'";
+        
+        // 이스케이프 문자
+        var str6 = "문자는\\ \"문자\"";
+        var str7 = '문자는\n \'문자\''; 
+        
+        // alert('자바스크립트\n제이쿼리');
+
+        document.write(str4 + '<br>');
+        document.write(str5 + '<br>');
+        document.write(str6 + '<br>');
+        document.write(str7 + '<br>');
+
+        // 비교 연산 결과는 true 또는 false
+        // 비교 연산자: >, <, >=, <=, ==, !=, ===, !==
+        var boo1 = (5 > 4);
+        var boo2 = (5 < 4);
+
+        document.write(boo1);
+        document.write('<br>');
+        document.write(boo2);
+
+        var boo3 = 0;
+        var boo4 = -3.3;
+        // 객체지향 프로그래밍 언어: java, javascript, python, c++, ....
+        // 객체, 클래스, 생성자, 함수, 메서드, 속성, .....
+        // Boolean(데이터) -> 데이터를 불 값으로 생성한다
+        // 0만 false, 나머지는 true
+        document.write(Boolean(boo3));
+        document.write('<br>');
+        document.write(Boolean(boo4));
+
+        // 변수 선언후 값을 할당하지 않았을 때
+        var temp1;
+        document.write('<br>');
+        document.write(temp1);
+
+        // 객체 데이터는 {}로 표시한다
+        var Obj = {}
+        Obj.name = "홍길동";
+        Obj.age;
+        document.write('<br>');
+        document.write(Obj);
+    </script>
+</body>
+</html>

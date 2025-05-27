@@ -1,38 +1,38 @@
 @charset "utf-8";
 
 /* 공통 */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    font: 15px/1.6 '돋움', sans-serif;
+    font: 15px/1.6 "돋움", sans-serif;
     background: #fff;
-    color: #333;
+    color:#333;
 }
 ul {
-    list-style: none;
+    list-style:none;
     /* margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 40px; */
 }
 a {
     text-decoration: none;
-    color: #333;
+    color:#333;
 }
+
 /* 상단 영역 */
 .wrap {
     display: flex;
     height: 850px;
 }
 /* 헤더 영역 */
-header {;
+header {
     width: 200px;
-    background: lightgray;
+    background: #e2e2e2;
 }
-
-.gnb{
+.gnb {
     text-align: center;
 }
 nav {
@@ -48,45 +48,52 @@ nav a {
     margin-top: 4px;
 }
 nav a:hover {
-    background: green;
+    background: #E6001E;
     color: #fff;
 }
 .spotmenu a {
     color: #555;
 }
 .spotmenu a:not(:last-child):after {
-    content: " | ";
+    content: ' |';
     margin: 8px;
 }
 .spotmenu a:hover {
     text-decoration: underline;
     color: #333;
 }
+
 /* 오른쪽 영역 */
-.container {;
+.container {
     width: calc(100% - 200px);
-    background: darkorange;
 }
 /* 슬라이드 이미지 */
 .slide {
     height: 400px;
 }
+/* 2025-05-26 추가 */
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
 /* 바로가기 링크 */
 .link {
     position: absolute;
-    right: 0;
-    top: 0;
+    right:0;
+    top:0;
     width: 120px;
     height: 340px;
-    background: red;
+    background: #A88140;
     text-align: center;
 }
-.like li {
+.link li {
     margin-top: 16px;
 }
 .link span {
     display: block;
 }
+
 /* 배너 */
 .banner {
     display: flex;
@@ -94,7 +101,7 @@ nav a:hover {
     align-items: center;
     padding: 0 35px;
     height: 200px;
-    background: darkgreen;
+    background: #699CBA;
 }
 .cont {
     display: flex;
@@ -102,11 +109,25 @@ nav a:hover {
 .cont img {
     margin-right: 32px;
 }
+
 /* 공지사항 및 갤러리 */
 .tabs {
     height: 250px;
-    background: yellowgreen;
+    padding: 30px 35px;
+    line-height: 2;
 }
+.tabs a {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 0 16px;
+}
+.tabs a:hover {
+    background: #BD1218;
+    color: #fff;
+}
+
+
 /* 푸터 영역 */
 footer {
     display: flex;
@@ -128,7 +149,7 @@ footer {
     height: 30px;
 }
 .bmenu li:not(:last-child):after {
-    content: " | ";
+    content: ' | ';
     margin: 8px;
 }
 /* 주소 및 저작권 */
