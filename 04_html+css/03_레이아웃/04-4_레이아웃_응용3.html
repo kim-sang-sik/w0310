@@ -6,47 +6,33 @@
     <title>레이아웃-응용3</title>
     <style>
         div, header {background: #ccc;}
-        /* display: flex;는 부모 요소(플렉스 컨테이너)에 적용한다
-        그러면 자식은 플렉스 아이템이 된면서 가로 배치된다*/
-        .container, .wrap, .contents{background: transparent;}
+        /* display:flex;는 부모 요소(플렉스 컨테이너)에 적용한다. 그러면 자식은 플렉스 아이템이 되면서 가로 배치된다. */
+        .container, .wrap, .contents {background: transparent;}
         .container {display: flex;}
 
         .header {width: 200px; margin-right: 4px;}
         .wrap {width: 1000px;}
-        .slide {width: 400px;}
+        .slide {height: 400px;}
         /* 0은 단위 생략 가능 -> 0px */
-        .banner {width: 200px; margin: 4px 0;}
-        .contents {width: 250px; display: flex;}
+        .banner {height: 200px; margin: 4px 0;}
+        .contents {height: 250px; display: flex;}
         .notice {width: 496px; margin-right: 4px;}
         .gallery {width: 500px;}
 
         .footer {height: 100px; display: flex; margin-top: 4px;}
-        /* 
-        개별형
-            margin-top: 10px;
-            margin-right: 20px;
-            margin-bottom: 30px;
-            margin-left: 40px;
-
-        속기형
-            margin: 10px
-            margin: 10px 20px;
-            margin: 10px 20px 30px;
-            margin: 10px 20px 30px 40px;
-        */
-        .copy {width: 796px; margin: 0 4px;}
+        .copy {width:796px; margin: 0 4px;}
         .blogo, .sns {width: 200px;}
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">헤더</header>
-        <div class="wrap">오른쪽
+        <header class="header"></header>
+        <div class="wrap">
             <div class="slide"></div>
             <div class="banner"></div>
             <div class="contents">
-                <div class="notice"></div>
-                <div class="gallery"></div>
+                <div class="notice">1</div>
+                <div class="gallery">2</div>
             </div>
         </div>
     </div>

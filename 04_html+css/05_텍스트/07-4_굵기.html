@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html+css</title>
+    <title>HTML+CSS</title>
     <style>
-             /* fw900 */
-            /* 
+        /* 
             100
             200
             300, lighter
@@ -15,9 +15,13 @@
             600
             700, bold(굵게)
             800, bolder
-            900, max
-            폰트
-             */
+            900
+            숫자가 클수록 더 굵어진다.
+            폰트에서 지원해야 모두 적용 가능하다.
+        */
+
+        /* span {font-family: '돋움', serif;} */
+
         .span1 {font-weight: 100;}
         .span2 {font-weight: 200;}
         .span3 {font-weight: 300;}
@@ -32,24 +36,26 @@
         .span9 {font-weight: 900;}
     </style>
 </head>
+
 <body>
     <h1>글자 굵기</h1>
-     <!-- (span.span${$00}+br)89 -->
-     <span class="span1">100</span><br>
-     <span class="span2">200</span><br>
-     <span class="span3">300</span><br>
-     <span class="lighter">lighter</span>
-     <span class="span4">400</span><br>
-     <span>normal</span>
-     <span class="span5">500</span><br>
-     <span class="span6">600</span><br>
-     <span class="span7">700</span><br>
-     <span class="bold">bold</span><br>
-     <span class="span8">800</span><br>
-     <span class="bolder">bolder</span><br>
-     <span class="span9">900</span><br>
+    <!-- (span.span${$00}+br)*9 -->
+    <span class="span1">100</span><br>
+    <span class="span2">200</span><br>
+    <span class="span3">300</span><br>
+    <span class="lighter">lighter</span><br>
+    <span class="span4">400</span><br>
+    <span>normal</span><br>
+    <span class="span5">500</span><br>
+    <span class="span6">600</span><br>
+    <span class="span7">700</span><br>
+    <span class="bold">bold</span><br>
+    <span class="span8">800</span><br>
+    <span class="bolder">bolder</span><br>
+    <span class="span9">900</span><br>
     
-    <strong>굵게, strong</strong><br>
-    <b>굵게, bolder</b>  
+    <strong>굵게, bolder</strong><br>
+    <b>굵게, bolder</b>
 </body>
+
 </html>

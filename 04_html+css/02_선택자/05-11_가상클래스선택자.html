@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html+css</title>
+    <title>HTML+CSS</title>
     <style>
-        /*
-            가상 클래스 - 사용자 인터랙션 
+        /* 
+            가상 클래스 선택자(:) - 사용자 인터랙션
                 a:link -> 아직 방문하지 않은 링크에 적용
                 a:visited -> 사용자가 방문한 링크에 적용
-                선택자:hover -> 마우스 커서를 요소 위에 올렸을 때(필수)
+                선택자:hover -> 마우스 커서를 요소 위에 올렸을 때
                 선택자:active -> 요소가 활성화되었을 때(클릭 중인 상태)
                 선택자:focus -> 요소에 포커스가 있을 때(예: input 박스에 클릭한 상태)
             
-            가상 클래스(:) - 위치 기반 -> 형제 기반
+            가상 클래스 선택자(:) - 위치 기반 -> 형제 관계(+, ~)
                 :first-child
                 :last-child
                 :nth-child(n)
@@ -25,33 +26,43 @@
                 :nth-of-type(n)
                 :nth-last-of-type(n)
                 :only-of-type
-            
-            가상 요소 선택자(:: 또는 : 둘다 적용됨)
+
+            가상 요소 선택자(:: 또는 :)
                 ::first-letter -> 요소의 첫 글자
                 ::first-line -> 요소의 첫 줄
                 ::before -> 요소 안 맨 앞에 배치될 요소
                 ::after -> 요소 안 맨 뒤에 배치될 요소
         */
+
+        /* 태그(요소) 선택자: a, ul, li, body, ... */
         
-        /* 태그(요소) 선택자: a, ul. lu, body...... */
-        ul{display: flex;}
-        li{list-style: none; margin: 0 8px;}
-        a{
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 8px;
+        }
+
+        a {
             color: gray;
             text-decoration: none;
             font-size: 18px;
             transition: 0.3s;
         }
-        /* highlight(하이라이트) 효과 - 글자색, 배경색, 라인..... */
 
-        /* 태그 선택자 + 가상 클래스 선택자 */
+        /* highlight(하이라이트) 효과 - 글자 색, 배경 색, 라인, ... */
+
+        /* 태그선택자 + 가상클래스선택자 */
         /* 사용자가 a태그가 마우스를 올렸을 때 */
-        a:hover{
+        a:hover {
             color: rgb(55, 53, 53);
             font-size: 24px;
         }
     </style>
 </head>
+
 <body>
     <h1>선택자</h1>
     <h2>가상 클래스 선택자</h2>
@@ -62,4 +73,5 @@
         <li><a href="#">메뉴4</a></li>
     </ul>
 </body>
+
 </html>

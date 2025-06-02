@@ -5,33 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자의 우선순위</title>
     <style>
+
         /* 
             선택자의 우선순위
                 1. !important -> 키워드 -> 가능한 사용하지 않는다.
-                2. 인라인 -> 지정방식 -> 가능한 사용하지 않는다.
+                2. 인라인 -> 지정 방식 ->  가능한 사용하지 않는다.
                 3. id
                 4. class, 가상 class, 속성
                 5. 요소, 가상 요소
-            
+
             같은 우선 순위를 가진다면 아래 기록한 내용이 적용된다.
         */
-        /* 
-            태그 1점
-            클래스 10점
-            아이디 100점
-        */
-        /* 1+1점 */
-        p.atxt {color: blue !important;}
-        /* 100점 */
-        #ctxt {color: red;}
+
+
+        /* p.atxt {color: blue !important;}
+        p.atxt {color: green !important;} */
+        
+        /* #ctxt {color: red;} */
+        /* .atxt.btxt {color: lime;} */
         p {color: pink;}
-        p.atxt.btxt {color: magenta;}
-        p:first-child {color: red;}
+        p {color: blue;}
+        p:first-child {color:red;}
+        p.atxt {color: magenta;}
     </style>
 </head>
 <body>
-    <!-- 인라인 스타일이 내부 스타일보다 우선한다. -->
-    <p id="ctxt" class="atxt btxt" style="color: green;">
+    <p class="atxt btxt" id="ctxt">
         선택자의 우선순위
     </p>
     <p>선택자의 우선순위2</p>

@@ -5,32 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>삼각형 만들기</title>
     <style>
+        body {
+            margin: 0;
+        }
         div {
             position: relative;
             left: 50px;
             top: 50px;
-            width: 100px;
+            width:100px;
         }
-        /* span {
-            vertical-align: middle;
-        } */
         div:before {
             content: '';
             position: absolute;
-            left: -30px;
-            top: 2px;
-            display: inline-block;
-            margin: 10px;
-            border: 10px solid #000;
-            /* 삼각형 */
-            /* width: 0;
-            height: 0;
-            border: 10px solid #000;
-            border-top-color: red;
-            border-bottom-color: lime;
-            border-right: none;
-            border-top-color: #fff;
-            border-bottom-color: #fff; */
+            left:-30px;
+            top:2px;
+
+            border-left: 14px solid red;
+            border-right: 14px solid transparent;
+            border-top:10px solid transparent;
+            border-bottom: 10px solid transparent;
         }
     </style>
 </head>

@@ -7,16 +7,26 @@
     <style>
         div {
             margin: 30px;
-            border: 10px solid #aaa;
-            /* outline은 상하좌우 따로 지정 불가능하다. */
-            outline: 5px solid red; /* outline 속성 */
-            /* 테두리와 외곽선 사이 간격 */
-            outline-offset: 10px; /* outline-offset 속성 */
+            border-width: 10px;
+            border-style: solid;
+            border-color: #aaa;
 
+            /* border: 10px solid #aaa; */
+            /* outline은 상하좌우 따로 지정할 수 없다. */
+            
+            /* 개별 속성 */
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: red;
+
+            /* 속기 속성 */
+            /* outline: 5px solid red; */
+            /* 테두리와 외곽선 사이 간격 */
+            outline-offset: 12px;
         }
     </style>
 </head>
 <body>
-    <div>박스</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, sint. Voluptate odio distinctio error delectus itaque, neque ex quod incidunt id ad non enim magni hic autem reiciendis! In, dolorem.</div>
 </body>
 </html>

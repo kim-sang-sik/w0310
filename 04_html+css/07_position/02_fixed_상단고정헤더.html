@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상단 고정 헤더</title>
     <style>
-        /* 
-            fixed의 상단 고정 헤더
-        */
         body {
-            margin: 30px;
+            margin: 0px;
         }
-        /* 상단 고정 헤더 */
         header {
+            /* 상단 고정 헤더 */
             position: fixed;
             width: 100%;
-            top: 20px;
-            left: 50px;
+            left:0px;
+            top:0px;
             height: 100px;
-            background: blue;
+            background: darkolivegreen;
         }
         section {
             height: 900px;
+            background: lightcoral;
+        }
+        section:nth-of-type(2n) {
+            background: lightblue;
+        }
+        footer {
+            background: #ccc;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>

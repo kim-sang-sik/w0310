@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하위 선택자</title>
     <style>
-        /*  
+        /* 
             선택자1 선택자2
             부모 자식
             조상 손자
         */
-        /* div중 클래스 이름이 abox 요소의 자손 p를 선택하여 */
-        /* div.abox p */
-        .abox p{
-            color: brown;
+
+        .abox p {
+            color: blue;
         }
     </style>
 </head>
+
 <body>
     <div class="abox">
-        <p>.abox첫 번째의 자식p, 조상: div,html</p>
-        <p>.abox두 번쨰의 자식p</p>
+        <p>.abox의 하위 요소</p>
+        <p>.abox의 하위 요소</p>
         <ul>
             <li>
                 <p>.abox의 하위 요소</p>
@@ -29,7 +30,8 @@
                 <p>.abox의 하위 요소</p>
             </li>
         </ul>
-    </dav>
-<p>.abox의 하위 요소가 아니다.</p>
+    </div>
+    <p>.abox의 하위 요소가 아니다.</p>
 </body>
+
 </html>

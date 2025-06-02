@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position:absolute;</title>
     <style>
-
         body {
             margin: 0;
         }
@@ -17,9 +16,7 @@
             width: 200px;
             background: yellow;
         }
-        /* 레이아웃 작업시 가급적 요소의 기본 배치를 꺠지 않는 
-        방법으로 하는 것이 바람직 하다 */
-        .containel {
+        .container {
             width: calc(100% - 200px);
         }
         .slide {
@@ -31,9 +28,9 @@
             background: lightblue;
         }
         .link {
-            position: absolute;
-            right: 0;
-            top: 0;
+            position: absolute; /* posa */
+            top:0;
+            right:0;
             width: 120px;
             height: 300px;
             background: lightcoral;
@@ -43,7 +40,7 @@
 <body>
     <div class="wrap">
         <header>헤더</header>
-        <div class="containel">
+        <div class="container">
             <div class="slide">이미지</div>
             <div class="contents">
                 <div class="link">링크</div>

@@ -8,6 +8,7 @@
         div {
             background: orange;
             margin: 10px;
+            border: 1px solid orange;
             padding: 16px;
             width: 199px;
             height: 132px;
@@ -20,11 +21,11 @@
             /* 가로=199 + 16*2 + 1*2 -> 199 + 32 + 2 -> 233 */
             /* 세로=132 + 16*2 + 1*2 -> 132 + 32 + 2 -> 166 */
             /* 바깥쪽으로 padding 적용! */
-            box-sizing: content-box; /* 기본값 */
+            box-sizing: content-box;
         }
         .div2 {
             /* 안쪽으로 padding 적용! */
-            box-sizing: border-box; /* padding과 border를 포함한 너비 */
+            box-sizing: border-box;
         }
     </style>
 </head>

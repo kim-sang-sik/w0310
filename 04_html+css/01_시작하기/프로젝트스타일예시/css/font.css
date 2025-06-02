@@ -1,12 +1,7 @@
 /* font.css: 폰트 정의 */
 @charset "utf-8";
-/* CDN (Content Delivery Network)은 웹 사이트와 인터넷
-서비스의 콘텐츠를 전 세계 사용자에게 빠르고 효율적으로
-전송하는 기술입니다 
-전 세계에 분산된 서버(엣지 서버)를 사용하여 사용자에게 가까운 곳에서 콘텐츠를 제공하여
-웹 사이트의 로딩 시간을 줄이고, 대역폭 비용을 절감하며, 콘텐츠를 배포하는 방식
-*/
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap);
+/* CDN(Content Delivery Network)은 물리적으로 떨어져 있는 사용자에게 컨텐츠를 더 빠르게 제공하기 위해 고안된 기술, 지리적으로 분산된 여러 개의 서버, 웹사이트의 원래 서버와 달리 사용자에게 더 가까이에 있는 서버로부터 컨텐츠를 배포하는 방식 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 body {
     font-family: "Noto Sans KR", sans-serif;
