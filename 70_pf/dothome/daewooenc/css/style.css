@@ -51,6 +51,7 @@ header {
 
 /* 내비게이션 */
 .gnb {
+    display: flex;
     position: absolute;
     right: 20px;
     width: 640px;

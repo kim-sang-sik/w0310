@@ -40,9 +40,6 @@ header .inner {
 }
 
 nav {
-    align-self: flex-end;
-    width: 600px;
-    height: 60px;
 }
 nav ul {
     display: flex;
